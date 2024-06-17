@@ -1,3 +1,26 @@
 type Query{
     testCheckMSGQL:String
+    getAllProducts:[ProductDto]
+    getProductById(productId: Int):ProductDto
+}
+
+type Mutation{
+    addProduct(productInput: ProductInput):ProductDto
+}
+
+type ProductDto{
+    productId: Int
+    name: String
+    description: String
+    price: Float
+    stockQuantity: Int
+    category: String
+}
+input ProductInput{
+    productId: Int
+    name: String
+    description: String
+    price: Float
+    stockQuantity: Int
+    category: String
 }

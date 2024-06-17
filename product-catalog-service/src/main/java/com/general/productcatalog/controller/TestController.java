@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/testcheckMS")
-    public String testCheckMS(){
+    public String testCheckMS() {
         return "Test check Rest API MS success..!";
     }
 
     @QueryMapping
-    public String testCheckMSGQL(){
+    public String testCheckMSGQL() {
         return "Test testCheckGQL MS success..!";
     }
 
